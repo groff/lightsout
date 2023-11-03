@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvMovesText"
+        style="@style/TextAppearance.Material3.HeadlineSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/moves"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMovesCounter"
+        style="@style/TextAppearance.Material3.HeadlineSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toEndOf="@+id/tvMovesText"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="5" />
+
+    <TextView
+        android:id="@+id/tvTimeText"
+        style="@style/TextAppearance.Material3.HeadlineSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/time"
+        app:layout_constraintEnd_toStartOf="@+id/tvTimeCounter"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        style="@style/TextAppearance.Material3.BodyMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/objective_detail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMovesText" />
+
+    <Chronometer
+        android:id="@+id/tvTimeCounter"
+        style="@style/TextAppearance.Material3.HeadlineSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <CheckBox
+            android:id="@+id/checkNumber1"
+            style="@style/Checkbox"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/checkNumber2"
+            style="@style/Checkbox"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toEndOf="@+id/checkNumber1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/checkNumber3"
+            style="@style/Checkbox"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toEndOf="@+id/checkNumber2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/checkNumber4"
+            style="@style/Checkbox"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toEndOf="@+id/checkNumber3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/checkNumber5"
+            style="@style/Checkbox"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toEndOf="@+id/checkNumber4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/checkNumber6"
+            style="@style/Checkbox"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkNumber1" />
+
+        <CheckBox
+            android:id="@+id/checkNumber7"
+            style="@style/Checkbox"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toEndOf="@+id/checkNumber6"
+            app:layout_constraintTop_toBottomOf="@+id/checkNumber2" />
+
+        <CheckBox
+            android:id="@+id/checkNumber8"
+            style="@style/Checkbox"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toEndOf="@+id/checkNumber7"
+            app:layout_constraintTop_toBottomOf="@+id/checkNumber3" />
+
+        <CheckBox
+            android:id="@+id/checkNumber9"
+            style="@style/Checkbox"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toEndOf="@+id/checkNumber8"
+            app:layout_constraintTop_toBottomOf="@+id/checkNumber4" />
+
+        <CheckBox
+            android:id="@+id/checkNumber10"
+            style="@style/Checkbox"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toEndOf="@+id/checkNumber9"
+            app:layout_constraintTop_toBottomOf="@+id/checkNumber5" />
+
+        <CheckBox
+            android:id="@+id/checkNumber11"
+            style="@style/Checkbox"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkNumber6" />
+
+        <CheckBox
+            android:id="@+id/checkNumber12"
+            style="@style/Checkbox"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toEndOf="@+id/checkNumber11"
+            app:layout_constraintTop_toBottomOf="@+id/checkNumber7" />
+
+        <CheckBox
+            android:id="@+id/checkNumber13"
+            style="@style/Checkbox"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toEndOf="@+id/checkNumber12"
+            app:layout_constraintTop_toBottomOf="@+id/checkNumber8" />
+
+        <CheckBox
+            android:id="@+id/checkNumber14"
+            style="@style/Checkbox"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toEndOf="@+id/checkNumber13"
+            app:layout_constraintTop_toBottomOf="@+id/checkNumber9" />
+
+        <CheckBox
+            android:id="@+id/checkNumber15"
+            style="@style/Checkbox"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toEndOf="@+id/checkNumber14"
+            app:layout_constraintTop_toBottomOf="@+id/checkNumber10" />
+
+        <CheckBox
+            android:id="@+id/checkNumber16"
+            style="@style/Checkbox"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkNumber11" />
+
+        <CheckBox
+            android:id="@+id/checkNumber17"
+            style="@style/Checkbox"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toEndOf="@+id/checkNumber16"
+            app:layout_constraintTop_toBottomOf="@+id/checkNumber12" />
+
+        <CheckBox
+            android:id="@+id/checkNumber18"
+            style="@style/Checkbox"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toEndOf="@+id/checkNumber17"
+            app:layout_constraintTop_toBottomOf="@+id/checkNumber13" />
+
+        <CheckBox
+            android:id="@+id/checkNumber19"
+            style="@style/Checkbox"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toEndOf="@+id/checkNumber18"
+            app:layout_constraintTop_toBottomOf="@+id/checkNumber14" />
+
+        <CheckBox
+            android:id="@+id/checkNumber20"
+            style="@style/Checkbox"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toEndOf="@+id/checkNumber19"
+            app:layout_constraintTop_toBottomOf="@+id/checkNumber15" />
+
+        <CheckBox
+            android:id="@+id/checkNumber21"
+            style="@style/Checkbox"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkNumber16" />
+
+        <CheckBox
+            android:id="@+id/checkNumber22"
+            style="@style/Checkbox"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toEndOf="@+id/checkNumber21"
+            app:layout_constraintTop_toBottomOf="@+id/checkNumber17" />
+
+        <CheckBox
+            android:id="@+id/checkNumber23"
+            style="@style/Checkbox"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toEndOf="@+id/checkNumber22"
+            app:layout_constraintTop_toBottomOf="@+id/checkNumber18" />
+
+        <CheckBox
+            android:id="@+id/checkNumber24"
+            style="@style/Checkbox"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toEndOf="@+id/checkNumber23"
+            app:layout_constraintTop_toBottomOf="@+id/checkNumber19" />
+
+        <CheckBox
+            android:id="@+id/checkNumber25"
+            style="@style/Checkbox"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toEndOf="@+id/checkNumber24"
+            app:layout_constraintTop_toBottomOf="@+id/checkNumber20" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/victoryMessage"
+        style="@style/TextAppearance.Material3.DisplayLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/you_win"
+        android:textColor="@android:color/holo_green_light"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clGame"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btPlayAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/play_again"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/victoryMessage"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
