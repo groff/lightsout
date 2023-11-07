@@ -128,7 +128,7 @@ class LightsOut : AppCompatActivity() {
                 view = binding.checkNumber10,
                 adjacentNodes = listOf(
                     Node(binding.checkNumber9),
-                    Node(binding.checkNumber10),
+                    Node(binding.checkNumber5),
                     Node(binding.checkNumber15)
                 ),
                 isAdjacent = false,
